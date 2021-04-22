@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Main page</title>
+</head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<body>
+<div class="container">
+    <h1>WELCOME TO HS AUCTIONS</h1>
+    <div class="card card-body">
+        <form method="get" action="home-servlet">
+            <div class="form-group">
+                <label for="item_id">ITEM ID </label>
+                <input id="item_id" type="text" class="form-control" placeholder="Enter Item ID." name="item_id" required/>
+            </div>
+
+            <div class="form-group">
+                <label for="item_name">ITEM NAME </label>
+                <input id="item_name" type="text" class="form-control" placeholder="Enter item name." name="item_name" required/>
+            </div>
+
+            <div class="form-group">
+                <label for="user_name">USER NAME </label>
+                <input id="user_name" type="text" class="form-control" placeholder="Enter your name." name="user_name" required/>
+            </div>
+
+            <div class="form-group">
+                <label for="user_email">USER EMAIL </label>
+                <input id="user_email" type="email" class="form-control" placeholder="Enter e-mail." name="user_email" required/>
+            </div>
+
+            <div class="form-group">
+                <label for="amount">AMOUNT</label>
+                <input id="amount" type="number" class="form-control" placeholder="Enter amount." name="amount" required/>
+            </div>
+
+            <div class="form-group form-check">
+                <input type="checkbox" id="check" name="check" class="form-check-input"/>
+                <label for="check">Select to auto increment bid to match others</label>
+            </div>
+
+            <button type="submit" class="btn btn-dark">SUBMIT</button>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>
